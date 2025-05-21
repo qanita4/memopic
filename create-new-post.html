@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>memopic - Create New Post</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-left">
+    <img src="assets/logo.png" alt="memopic logo" class="logo" />
+    <span class="app-name">memopic</span>
+  </div>
+  <div class="nav-right">
+    <a href="allpost.html" class="nav-link">All Posts</a>
+    <img src="assets/profile-icon.svg" alt="Profile" id="profileIcon" class="profile-icon" />
+    <div id="profileDropdown" class="dropdown-menu">
+      <a href="myposts.html">My Posts</a>
+      <a href="login.html" id="logoutLink">Logout</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <h2>Create New Post</h2>
+    <form id="createPostForm" enctype="multipart/form-data" novalidate>
+      <label for="title">Judul Postingan</label>
+      <input type="text" id="title" name="title" placeholder="Masukkan judul post" required />
+
+      <label for="content">Isi Postingan</label>
+      <textarea id="content" name="content" rows="5" placeholder="Tulis isi postingan..." required></textarea>
+
+      <label for="image">Upload Foto (opsional)</label>
+      <input type="file" id="image" name="image" accept="image/*" />
+
+      <label for="visibility">Visibility</label>
+      <select id="visibility" name="visibility" required>
+        <option value="public" selected>Public</option>
+        <option value="private">Private</option>
+      </select>
+
+      <div class="button-group">
+        <button type="submit">Post</button>
+        <button type="button" onclick="window.location.href='allpost.html'">Cancel</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script src="js/profile.js"></script>
+<script src="js/create-new-post.js"></script>
+
+</body>
+</html>
