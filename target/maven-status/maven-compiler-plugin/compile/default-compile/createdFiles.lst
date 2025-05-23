@@ -1,0 +1,9 @@
+com\memopic\controller\PostController$PostDto.class
+com\memopic\repository\UserRepository.class
+com\memopic\controller\PostController.class
+com\memopic\controller\AuthController.class
+com\memopic\model\Post.class
+com\memopic\model\User.class
+com\memopic\controller\WebPageController.class
+com\memopic\repository\PostRepository.class
+com\memopic\MemopicApplication.class
